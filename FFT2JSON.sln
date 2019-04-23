@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFT2JSON", "FFT2JSON\FFT2JSON.csproj", "{BBC39E71-5AE8-404C-A08E-04BB0FA0BA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y_FFTLibNet3.5", "Y_FFTLibNet3.5\Y_FFTLibNet3.5.csproj", "{D858278A-7286-4077-8993-D7AE923B57B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBC39E71-5AE8-404C-A08E-04BB0FA0BA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC39E71-5AE8-404C-A08E-04BB0FA0BA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC39E71-5AE8-404C-A08E-04BB0FA0BA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC39E71-5AE8-404C-A08E-04BB0FA0BA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D858278A-7286-4077-8993-D7AE923B57B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D858278A-7286-4077-8993-D7AE923B57B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D858278A-7286-4077-8993-D7AE923B57B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D858278A-7286-4077-8993-D7AE923B57B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5F13BFC-0785-4806-B398-AD2BCA6AFFE1}
+	EndGlobalSection
+EndGlobal

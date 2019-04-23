@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\FFT2JSON\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\FFT2JSON\NAudio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
