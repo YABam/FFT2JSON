@@ -4,6 +4,9 @@ using System.IO;
 
 namespace Y_FFTLib
 {
+	/// <summary>
+	/// Used to read MP3 file
+	/// </summary>
 	class Mp3Reader
     {
         public float[] DataL, DataR, DataDiff;
@@ -30,7 +33,7 @@ namespace Y_FFTLib
                 }
             }
 
-            //data to left and right
+            //data to left and right channel
             DataL = new float[size];
             DataR = new float[size];
             DataDiff = new float[size];

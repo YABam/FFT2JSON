@@ -19,9 +19,9 @@ namespace Y_FFTLib
 			_FFTChannel = __FFTChannel;
 		}
 
-		private Mp3Reader _Reader;
-        private int _progressTimeMs;
-		public List<FFTDataNode> resultList = new List<FFTDataNode>();
+		private Mp3Reader _Reader;//read files
+        private int _progressTimeMs;//to save the progress time
+		public List<FFTDataNode> resultList = new List<FFTDataNode>();//to save the result
 
 		private Complex[] _ReadBuffer;
 		public float[] _Buffer;
@@ -67,7 +67,9 @@ namespace Y_FFTLib
 				_ReadBuffer[i] = new Complex(data[i + offset], 0);
 			}
 
+			//FFT
 			Fourier.Forward(_ReadBuffer);
+			//Get the result
 			for (int i = 0; i < len; ++i)
 			{
 				_Buffer[i] = (float)_ReadBuffer[i].Magnitude;
@@ -75,14 +77,17 @@ namespace Y_FFTLib
 		}
 	}
 
+	/// <summary>
+	/// To save FFT result
+	/// </summary>
     public class FFTDataNode
     {
         public float[] _FFTData;
         public int _TimeMs;
         public FFTDataNode(float[] data, int TimeMs)
         {
-            _FFTData = data;
-            _TimeMs = TimeMs;
+            _FFTData = data;//FFT data
+            _TimeMs = TimeMs;//Time
         }
     }
 }
